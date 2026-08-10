@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Segurança Digital - Terceira Idade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="barra-acessibilidade" aria-label="Controles de acessibilidade">
+    <span>Acessibilidade:</span>
+    <div class="acc-buttons">
+      <button id="btnAumentaTexto" class="botao-controle" title="Aumentar texto" aria-label="Aumentar tamanho do texto">A+ Aumentar</button>
+      <button id="btnDiminuiTexto" class="botao-controle" title="Diminuir texto" aria-label="Diminuir tamanho do texto">A- Diminuir</button>
+      <button id="btnAltoContraste" class="botao-controle" onclick="toggleHighContrast()" aria-label="Alternar alto contraste">Alto Contraste</button>
+      <button id="btnVoz" class="botao-controle botao-leitura">Ouvir / Pausar</button>
+      <button id="btnPararVoz" class="botao-controle" onclick="pararLeitura()">Parar</button>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Navegue com Segurança</h1>
+    <p>Seu guia prático e simples para usar a internet e o celular sem medo de golpes.</p>
+  </header>
+
+  <main>
+    <section class="emergency-card" aria-label="O que fazer em caso de suspeita de golpe">
+      <h2>⚠️ Caiu em um golpe ou está em dúvida?</h2>
+      <p>1. Não pague nada e não envie dinheiro.</p>
+      <p>2. Chame imediatamente um familiar de sua confiança ou vá até o seu banco.</p>
+      <p>3. Ligue para a Polícia Civil (190) ou vá até uma delegacia fazer um Boletim de Ocorrência.</p>
+    </section>
+
+    <h2 class="section-title">Dicas Importantes do Dia a Dia</h2>
+
+    <div class="tips-grid">
+      <article class="card">
+        <div class="card-header">
+          <div class="card-icon" aria-hidden="true">💬</div>
+          <h3>Golpe do WhatsApp</h3>
+        </div>
+        <ul>
+          <li><strong>Foto de parente:</strong> Se alguém usar a foto de um filho ou neto pedindo dinheiro em um número novo, <strong>não mande!</strong></li>
+          <li><strong>Confirme por ligação:</strong> Ligue para o número antigo da pessoa para saber se é verdade.</li>
+          <li><strong>Nunca envie códigos:</strong> Códigos que chegam por SMS no seu celular nunca devem ser passados para ninguém.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="card-icon" aria-hidden="true">🔑</div>
+          <h3>Cuidados com Senhas</h3>
+        </div>
+        <ul>
+          <li><strong>Anote em local seguro:</strong> Prefira guardar suas senhas em um caderno em casa do que salvar no celular.</li>
+          <li><strong>Não use datas fáceis:</strong> Evite usar sua data de nascimento ou "123456".</li>
+          <li><strong>O Banco não pede senha:</strong> Nenhum funcionário de banco liga pedindo sua senha ou código secreto.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="card-icon" aria-hidden="true">🔗</div>
+          <h3>Links e Mensagens</h3>
+        </div>
+        <ul>
+          <li><strong>Mensagens de prêmios:</strong> Cuidado com mensagens dizendo que você ganhou um sorteio, herança ou presente.</li>
+          <li><strong>Não clique em links:</strong> Links azuis enviados por desconhecidos podem roubar seus dados.</li>
+          <li><strong>Desconfie de urgência:</strong> Golpistas sempre dizem que "é urgente" para você não pensar. Calma!</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="card-icon" aria-hidden="true">📞</div>
+          <h3>Ligações do Banco</h3>
+        </div>
+        <ul>
+          <li><strong>Falsa central de atendimento:</strong> Se ligarem dizendo que sua conta foi invadida, <strong>desligue o telefone!</strong></li>
+          <li><strong>Não chame o Uber/Motoboy:</strong> Bancos nunca mandam motoboy buscar seu cartão em casa.</li>
+          <li><strong>Espere alguns minutos:</strong> Golpistas podem prender sua linha fixa. Use o celular para ligar pro banco se precisar.</li>
+        </ul>
+      </article>
+    </div>
+
+    <section class="quick-checklist">
+      <h2 class="section-title">Regras de Ouro (Marque para Praticar)</h2>
+      
+      <div class="checklist-item">
+        <input type="checkbox" id="check1">
+        <label for="check1">Eu nunca passo senhas ou códigos por ligação ou mensagem.</label>
+      </div>
+
+      <div class="checklist-item">
+        <input type="checkbox" id="check2">
+        <label for="check2">Eu sempre confirmo com a pessoa antes de fazer um PIX para número novo.</label>
+      </div>
+
+      <div class="checklist-item">
+        <input type="checkbox" id="check3">
+        <label for="check3">Eu sei que o banco nunca manda buscar meu cartão em casa.</label>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto de Conscientização e Segurança Digital para a Terceira Idade.</p>
+    <p>Guarde este site nos seus favoritos para consultar sempre que tiver dúvidas!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
